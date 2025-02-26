@@ -2,10 +2,6 @@
 
 This is a simple server status page implemented in HTML and PHP. It allows you to check the online/offline status of multiple servers and displays their availability in a user-friendly manner.
 
-## Test URL
-
-- https://status.nywhash.com
-
 ## Features
 
 - Displays the status of multiple servers
