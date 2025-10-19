@@ -4,7 +4,7 @@ A simple, lightweight server status built with PHP, HTML, CSS, and JavaScript. I
 
 ---
 
-## ⚙️ Features
+## Features
 
 - Real-time status checking (via AJAX)
 - Caching system
@@ -13,8 +13,18 @@ A simple, lightweight server status built with PHP, HTML, CSS, and JavaScript. I
 - Lightweight and dependency-free (except Font Awesome for icons)
 - Auto-refresh every 30 seconds
 
----
+## Requirements
 
-## 🚀 Live Demo
+- PHP 7.4 or higher recommended
 
+## PHP Extensions
+
+- json
+- date
+- sockets
+- filter
+
+## Live Demo
 [View Live Demo](https://api.nywhash.com/opensource/simpleserverstatus/)
+
+---
