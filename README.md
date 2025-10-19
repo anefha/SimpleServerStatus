@@ -1,26 +1,20 @@
-# Server Status Page
+# 🌐 Simple Server Status PHP Script
 
-This is a simple server status page implemented in HTML and PHP. It allows you to check the online/offline status of multiple servers and displays their availability in a user-friendly manner.
+A simple, lightweight server status built with PHP, HTML, CSS, and JavaScript. It allows you to check the real-time availability of multiple servers and services via TCP port connection checks.
 
-## Features
+---
 
-- Displays the status of multiple servers
-- Provides a visual indicator for online and offline status
-- Easy to set up and customize
+## ⚙️ Features
 
-## Usage
+- Real-time status checking (via AJAX)
+- Caching system
+- Option to hide IP addresses for privacy
+- Overview of total, online, and offline servers
+- Lightweight and dependency-free (except Font Awesome for icons)
+- Auto-refresh every 30 seconds
 
-1. Clone or download this repository to your web server.
-2. Edit the `index.php` file to configure your server details in the `$servers` array.
-3. Access the `index.php` file through your web browser to view the server status page.
+---
 
-## Configuration
+## 🚀 Live Demo
 
-Edit the `index.php` file and modify the `$servers` array to include your server information. Each server entry should include the protocol, host IP, and port number.
-
-```php
-$servers = array(
-    array('protocol' => 'Example', 'host' => '127.0.0.1', 'port' => 80),
-    array('protocol' => 'Example2', 'host' => '127.0.0.1', 'port' => 916),
-    // Add more server entries as needed
-);
+[View Live Demo](https://api.nywhash.com/opensource/simpleserverstatus/)

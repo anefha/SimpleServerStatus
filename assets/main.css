@@ -1,0 +1,199 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #ffe7e7 0%, #e2c5ff 100%);
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dashboard {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header h1 {
+        color: #2d3748;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .header p {
+        color: #718096;
+        font-size: 1.1rem;
+    }
+
+    .settings-info {
+        background: #e6fffa;
+        border: 1px solid #81e6d9;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #234e52;
+        font-size: 0.9rem;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .stat-card {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2d3748;
+    }
+
+    .stat-label {
+        color: #718096;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .servers-grid {
+        display: grid;
+        gap: 15px;
+    }
+
+    .server-card {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-left: 5px solid #48bb78;
+    }
+
+    .server-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .server-card.down {
+        border-left-color: #f56565;
+    }
+
+    .server-info {
+        flex: 1;
+    }
+
+    .server-name {
+        font-weight: 600;
+        color: #2d3748;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .server-address {
+        color: #718096;
+        font-size: 0.9rem;
+        font-family: 'Courier New', monospace;
+    }
+
+    .server-status {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .status-badge {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.85rem;
+    }
+
+    .status-up {
+        background: #c6f6d5;
+        color: #276749;
+    }
+
+    .status-down {
+        background: #fed7d7;
+        color: #c53030;
+    }
+
+    .status-icon {
+        font-size: 1.5rem;
+    }
+
+    .icon-up {
+        color: #48bb78;
+    }
+
+    .icon-down {
+        color: #f56565;
+    }
+
+    .last-update {
+        text-align: center;
+        margin-top: 30px;
+        color: #a0aec0;
+        font-size: 0.9rem;
+    }
+
+    .loading {
+        text-align: center;
+        padding: 20px;
+        color: #718096;
+    }
+
+    .error {
+        text-align: center;
+        padding: 20px;
+        color: #e53e3e;
+        background: #fed7d7;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .dashboard {
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .stats {
+            grid-template-columns: 1fr;
+        }
+
+        .server-card {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+    }
